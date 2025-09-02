@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #1E2041;
+    --font-geist:Geist;
+    --font-inter:Inter;
+    --color-public-layout-footer-text: #97989B;
+    --color-spid-primary: #5962F1;
+    --color-spid-inactive: #DEE0FC;
+}
