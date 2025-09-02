@@ -1,4 +1,3 @@
-import React from 'react'
 import image from '../assets/Stable coin img.png'
 import { Check } from 'lucide-react'
 import Button from './Button'

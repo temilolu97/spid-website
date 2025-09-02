@@ -1,4 +1,3 @@
-import React from 'react'
 import HeroSection from '../components/HeroSection'
 import image from '../assets/Personal Spid bg.png'
 import fundConversionImage from '../assets/Fund Coversion.png'
@@ -8,7 +7,6 @@ import HowItWorks from '../components/HowItWorks'
 import StablecoinInfo from '../components/StablecoinInfo'
 import ChooseRightAccount from '../components/ChooseRightAccount'
 import Faqs from '../components/Faqs'
-import Footer from '../components/Footer'
 
 const Home = () => {
     const information= [

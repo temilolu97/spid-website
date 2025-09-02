@@ -1,4 +1,3 @@
-import React from 'react'
 import Button from './Button'
 import mapImage from '../assets/map-base 1.png'
 import personal from '../assets/Personal.png'

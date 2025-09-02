@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Menu, X } from 'lucide-react' // hamburger & close icons
 import spidLogo from '../assets/SpidLogo.png'
 import Button from './Button'

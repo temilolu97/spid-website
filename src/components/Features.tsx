@@ -1,4 +1,3 @@
-import React from 'react'
 import multicurrencyImage from '../assets/Currencies Illustration.png'
 import crossBorderTransferImage from '../assets/Cross border Transfer Currencies Illustration.png'
 import smartKyc from '../assets/Smart KYC Illustration.png'

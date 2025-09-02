@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import HomeImage from '../assets/Home Page (KYC Completed).png'
 import { Minus, Plus } from 'lucide-react';
 import Modal from './Modal';

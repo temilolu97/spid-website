@@ -1,4 +1,3 @@
-import React from 'react'
 import personalIcon from '../assets/Icon (1).png'
 import businessIcon from '../assets/Icon (2).png'
 import { Check } from 'lucide-react'
