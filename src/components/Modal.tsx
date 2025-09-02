@@ -13,7 +13,7 @@ interface ModalProps {
     headerStyles?: string
 }
 
-const Modal: React.FC<ModalProps> = ({ isOpen, title, subTitle, onClose, children, footer, headerStyles, modalWidth ="max-w-lg", modalHeight="max-h-[70vh]", modalBg="bg-white" }) => {
+const Modal: React.FC<ModalProps> = ({ isOpen, title, subTitle, onClose, children, footer, headerStyles, modalWidth ="max-w-lg", modalHeight="max-h-[70vh]" }) => {
     if (!isOpen) return null
 
     return (
