@@ -87,15 +87,30 @@ const Footer = () => {
                         <div key={index}>
                             <p className="font-semibold text-base text-[#1E2024] mb-2">{item.name}</p>
                             <div>
-                                {item.options.map((option, idx) => (
-                                    <p
-                                        onClick={option == "Terms of Service" || option.toLowerCase() == "privacy notice" ? () => {handleClick(option)} : () => {}}
-                    key={idx}
-                                        className="font-normal text-sm text-[#5B5C5E] py-1 cursor-pointer hover:text-[#1E2024]"
-                                    >
-                                        {option}
-                                    </p>
-                                ))}
+                               {item.options.map((option, idx) => {
+  const isEmail = option.includes("@");
+  const isTerms = option === "Terms of Service";
+  const isPrivacy = option.toLowerCase() === "privacy notice";
+
+  return (
+    <p
+      key={idx}
+      onClick={
+        isTerms || isPrivacy
+          ? () => handleClick(option)
+          : isEmail
+          ? () => (window.location.href = `mailto:app.support@ideospay.com`)
+          : undefined
+      }
+      className={`font-normal text-sm text-[#5B5C5E] py-1 cursor-pointer hover:text-[#1E2024] ${
+        isEmail ? "underline" : ""
+      }`}
+    >
+      {option}
+    </p>
+  );
+})}
+
                             </div>
                         </div>
                     ))}
