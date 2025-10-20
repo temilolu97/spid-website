@@ -38,6 +38,7 @@ const Footer = () => {
             setActiveOption("Privacy")
             navigate("/privacy-policy")
         }
+        window.scrollTo(0, 0)
     }
     return (
         <div className="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-10">
@@ -87,29 +88,28 @@ const Footer = () => {
                         <div key={index}>
                             <p className="font-semibold text-base text-[#1E2024] mb-2">{item.name}</p>
                             <div>
-                               {item.options.map((option, idx) => {
-  const isEmail = option.includes("@");
-  const isTerms = option === "Terms of Service";
-  const isPrivacy = option.toLowerCase() === "privacy notice";
+                                {item.options.map((option, idx) => {
+                                    const isEmail = option.includes("@");
+                                    const isTerms = option === "Terms of Service";
+                                    const isPrivacy = option.toLowerCase() === "privacy notice";
 
-  return (
-    <p
-      key={idx}
-      onClick={
-        isTerms || isPrivacy
-          ? () => handleClick(option)
-          : isEmail
-          ? () => (window.location.href = `mailto:app.support@ideospay.com`)
-          : undefined
-      }
-      className={`font-normal text-sm text-[#5B5C5E] py-1 cursor-pointer hover:text-[#1E2024] ${
-        isEmail ? "underline" : ""
-      }`}
-    >
-      {option}
-    </p>
-  );
-})}
+                                    return (
+                                        <p
+                                            key={idx}
+                                            onClick={
+                                                isTerms || isPrivacy
+                                                    ? () => handleClick(option)
+                                                    : isEmail
+                                                        ? () => (window.location.href = `mailto:app.support@ideospay.com`)
+                                                        : undefined
+                                            }
+                                            className={`font-normal text-sm text-[#5B5C5E] py-1 cursor-pointer hover:text-[#1E2024] ${isEmail ? "underline" : ""
+                                                }`}
+                                        >
+                                            {option}
+                                        </p>
+                                    );
+                                })}
 
                             </div>
                         </div>
@@ -136,7 +136,7 @@ const Footer = () => {
                 </div>
             </div>
             {activeOption == "Terms" && (
-                <Modal modalBg='bg-[#E5E5FF]' modalWidth='max-w-[1000px]' isOpen={true} onClose={()=>{}} children={<TermsAndConditions/>}/>
+                <Modal modalBg='bg-[#E5E5FF]' modalWidth='max-w-[1000px]' isOpen={true} onClose={() => { }} children={<TermsAndConditions />} />
             )}
         </div>
     )
