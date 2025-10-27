@@ -35,7 +35,7 @@ const HowItWorks = () => {
   ]
 
   return (
-    <div className="mb-20">
+    <div className="mb-24 px-4 sm:px-8 md:px-12 lg:px-0">
       {/* Hero Section */}
       <div className="relative border border-[#DEE0FC] bg-gradient-to-r from-[#DBDCFA] via-white to-[#EBEFFF] rounded-2xl max-w-[1030px] mx-auto px-6 py-12 sm:px-12 sm:py-16">
         <div className="relative z-10 max-w-lg">

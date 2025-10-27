@@ -12,27 +12,31 @@ const StablecoinInfo = () => {
   return (
     <div className="bg-gradient-to-b from-[#E8E8FC] to-[#E5E5FF] px-4 py-12 sm:px-8 md:px-16 lg:px-24">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        
         {/* Left Side */}
-        <div>
+        <div className="order-2 md:order-1">
+          {/* Label */}
           <div className="inline-block border border-[#F7F8FF] py-1.5 px-3 rounded-lg bg-gradient-to-r from-[#E4E5FF] via-[#F5EEFF] to-[#D8CCFF]">
             <p className="text-spid-primary font-normal text-sm sm:text-base md:text-lg">
               Use Stablecoins, Stay in Control
             </p>
           </div>
 
+          {/* Title */}
           <div className="mt-6">
             <p className="font-bold text-3xl sm:text-4xl md:text-5xl text-[#1E2024]">
               Stablecoin Advantage
             </p>
           </div>
 
+          {/* Subtitle */}
           <div className="mt-6 max-w-xl">
             <p className="font-medium text-base sm:text-lg text-[#08091A]">
               Protect your money from currency fluctuations by holding value in USDT or USDC
             </p>
           </div>
 
-          {/* Features List */}
+          {/* Features */}
           <div className="mt-6">
             {information.map((info, index) => (
               <div key={index} className="flex items-center mb-4 gap-2">
@@ -60,9 +64,13 @@ const StablecoinInfo = () => {
         </div>
 
         {/* Right Side Image */}
-        <div className="flex justify-center">
-          <div className="w-full max-w-md sm:max-w-lg border border-white rounded-lg overflow-hidden">
-            <img src={image} alt="Stablecoin" className="w-full h-auto object-contain" />
+        <div className="flex justify-center order-1 md:order-2">
+          <div className="relative w-full max-w-md sm:max-w-lg">
+            <img
+              src={image}
+              alt="Stablecoin"
+              className="w-full h-auto object-contain drop-shadow-lg"
+            />
           </div>
         </div>
       </div>

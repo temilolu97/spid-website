@@ -4,7 +4,7 @@ import smartKyc from '../assets/Smart KYC Illustration.png'
 import conversionImage from '../assets/Group 1420070428.png'
 const Features = () => {
     return (
-        <div className='flex flex-col items-center justify-center py-27.5'>
+        <div className='flex flex-col items-center justify-center py-27.5 px-4 md:px-10 lg:px-20'>
             <div className='max-w-[705px] text-center'>
                 <p className='font-[700] text-[48px]'>Your All-in-One Global Financial Toolkit</p>
                 <p className='font-[400] text-[20px] text-[#08091A]'>All-in-one platform to manage multi-currency wallets,
@@ -20,7 +20,7 @@ const Features = () => {
                         <p> - Instantly access funds in USD, EUR, GBP, NGN, and more.</p>
                         <p>- Add digital assets like USDT and USDC for stability and flexibility.</p>
                     </div>
-                    <div className='absolute right-0 top-55  h-[323px] w-[388px]'>
+                    <div className='absolute right-0 bottom-0 md:top-55  md:h-[323px] md:w-[388px]'>
                         <img src={multicurrencyImage} className='h-full w-full object-contain' />
                     </div>
                 </div>
@@ -34,7 +34,7 @@ const Features = () => {
                         <p>- Competitive FX rates for currency conversions.</p>
                         
                     </div>
-                    <div className='absolute right-20 top-56  h-[350px] w-[320px]'>
+                    <div className='absolute right-0 md:right-20 top-56  h-[350px] w-[320px]'>
                         <img src={crossBorderTransferImage} className='h-full w-full object-contain' />
                     </div>
                 </div>
@@ -48,7 +48,7 @@ const Features = () => {
                         <p>- Trusted identity verification.</p>
 
                     </div>
-                    <div className='absolute right-10 top-51  h-[350px] w-[350px]'>
+                    <div className='absolute right-1 md:right-10 top-51  h-[350px] w-[350px]'>
                         <img src={smartKyc} className='h-full w-full object-contain' />
                     </div>
                 </div>
@@ -63,7 +63,7 @@ const Features = () => {
                         <p>- Avoid market volatility by holding in stablecoins..</p>
 
                     </div>
-                    <div className='absolute right-25 top-49  h-[350px] w-[350px]'>
+                    <div className='absolute right-1 md:right-25 top-49  h-[350px] w-[350px]'>
                         <img src={conversionImage} className='h-full w-full object-contain' />
                     </div>
                 </div>
